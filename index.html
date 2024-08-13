@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image" href="k-logo.jpg" />
+    <script
+      src="https://kit.fontawesome.com/3383304096.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <ul id="sidemenu">
+            <li>
+              <a href="#header"><b>Home</b></a>
+            </li>
+            <li>
+              <a href="#about"><b>About</b></a>
+            </li>
+            <li>
+              <a href="#projects"><b>Projects</b></a>
+            </li>
+            <li>
+              <a href="#Portfolio"><b>Portfolio</b></a>
+            </li>
+            <li>
+              <a href="#contact"><b>Contact</b></a>
+            </li>
+            <i class="fas fa-times" onclick="closemenu()"></i>
+          </ul>
+          <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p class="role"><b></b></p>
+          <h1>
+            Hi👋🏻, I'm<span>KISHORE S</span> <br />from Bannari Amman
+            Institute Of Technology
+          </h1>
+        </div>
+      </div>
+
+      <!--------------------about-------------->
+      <div id="about">
+        <div class="container">
+          <div class="row">
+            <div class="about-col-1">
+              <img src="mine.jpg" />
+            </div>
+            <div class="about-col-2" style="font-size: 25px">
+              <h1 class="sub-title">About Me</h1>
+              <br />
+              <p>
+                An aspiring student in the domain of Web development and
+                ambitious and eager to join as a Software Developer to provide
+                better ideas and good projects to clients and assist in
+                developing and implementing applications...
+              </p>
+              <div class="tab-titles">
+                <p
+                  class="tab-links active-link"
+                  onclick="opentab('TechnicalSkills')"
+                >
+                  Technical_Skills
+                </p>
+                <p class="tab-links" onclick="opentab('Areas Of Interest')">
+                  Areas_Of_Interest
+                </p>
+                <p
+                  class="tab-links"
+                  onclick="opentab('Educational Qualification')"
+                >
+                  Educational_Qualification
+                </p>
+              </div>
+              <div class="tab-contents active-tab" id="TechnicalSkills">
+                <ul>
+                  <li>
+                    <span><b>Programming Language</b></span
+                    ><br />C
+                  </li>
+                  <br />
+                  <li>
+                    <span><b>Web Development</b></span
+                    ><br />
+                    <ul style="list-style-type: square">
+                      <li>FRONT-END: HTML,CSS,JAVASCRIPT(BASIC)<br /></li>
+                      <li>BACK-END: PYTHON(BASIC)<br /></li>
+                      
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+              <div class="tab-contents" id="Areas Of Interest">
+                <ul>
+                  <li>Web designing</li>
+                  <br />
+                  
+                  <br />
+                </ul>
+              </div>
+              <div class="tab-contents" id="Educational Qualification">
+                <ul>
+                  <li>
+                    <span>DEGREE: BE COMPUTER SCIENCE AND ENGINEERING</span><br />BANNARI
+                    AMMAN INSTITUTE OF TECHNOLOGY(2022-2026)
+                    <br />
+                    <!-- BE COMPUTER SCIENCE AND ENGINEERING<br /> -->
+                    CGPA: 7.50 (up-to 3rd semester)
+                  </li>
+                  <br />
+                  <li>
+                    <span>12<sup>th</sup></span> <br />MALAR  MATRICULATION
+                    HIGHER SECONDARY SCHOOL (2021-2022)<br />
+                    PERCENTAGE: 69%
+                  </li>
+                  <br />
+                  <li>
+                    <span>10<sup>th</sup></span
+                    ><br />
+                    R N OXFORD MATRIC HIGH SCHOOL
+                    (2019-2020)<br />
+                    PERCENTAGE: 89.6%
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+     
+    
+
+      <!--------------contact------------->
+      <br /><br />
+      <div id="contact">
+        <div class="container">
+          <div class="row">
+            <div class="contact-left">
+              <h1 class="sub-title">Contact Me</h1>
+              <p><i class="fas fa-paper-plane"></i>kvgkishore65@gmail.com</p>
+              <p><i class="fas fa-phone-square-alt"></i>9361446929</p>
+              <div class="social-icons">
+                <a href="https://github.com/kishore7111">
+                  <i class="fab fa-github"> </i>
+                </a>
+                <a href="https://www.instagram.com">
+                  <i class="fab fa-instagram"> </i>
+                </a>
+                <a href="https://www.linkedin.com/in/kishore-shanmugam/">
+                  <i class="fab fa-linkedin"> </i>
+                </a>
+              </div>
+              <br />
+              <a
+                href="RESUME-MOHAMED HIJAS H.pdf"
+                download
+                class="btn btn2"
+                >Download CV
+              </a>
+            </div>
+            <div class="contact-right">
+              <form name="submit-to-google-sheet">
+                <input
+                  type="text"
+                  name="Name"
+                  placeholder="Your Name"
+                  required
+                />
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Your email"
+                  required
+                />
+                <textarea
+                  name="Message"
+                  rows="6"
+                  placeholder="Your Message"
+                  required
+                >
+                </textarea>
+                <button type="submit" class="btn btn2">Submit</button>
+              </form>
+              <span id="msg"></span>
+            </div>
+          </div>
+        </div>
+        <div class="copyright">
+          <p>
+            Copyright &copy; 2026-KISHORE'S Portfolio<i class="fas fa-heart"></i>
+          </p>
+        </div>
+      </div>
+
+      <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname) {
+          for (tablink of tablinks) {
+            tablink.classList.remove("active-link");
+          }
+          for (tabcontent of tabcontents) {
+            tabcontent.classList.remove("active-tab");
+          }
+          event.currentTarget.classList.add("active-link");
+          document.getElementById(tabname).classList.add("active-tab");
+        }
+      </script>
+
+      <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu() {
+          sidemenu.style.right = "0";
+        }
+        function closemenu() {
+          sidemenu.style.right = "-200px";
+        }
+      </script>
+      <script>
+        const scriptURL =
+          "https://script.google.com/macrhttps://script.google.com/home/projects/1Qa80kr-ZIXQ3ELRfAxpKdYjGh04RSOpfvSB6BigfFh_Q1EC-tSfwfCLY/editos/s/AKfycbxsUmmbAzsSmIEefr924PyNe3jnBko1yThGxWNuZ7Gt9fdtC0BU8e5nqLL1DBn0OK7S3g/exec";
+        const form = document.forms["submit-to-google-sheet"];
+        const msg = document.getElementById("msg");
+
+        form.addEventListener("submit", (e) => {
+          e.preventDefault();
+          fetch(scriptURL, { method: "POST", body: new FormData(form) })
+            .then((response) => {
+              msg.innerHTML = "Message sent Successfully";
+              setTimeout(function () {
+                msg.innerHTML = "";
+              }, 5000);
+              form.reset();
+            })
+            .catch((error) => console.error("Error!", error.message));
+        });
+      </script>
+    </div>
+  </body>
+</html>
